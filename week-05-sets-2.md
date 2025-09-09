@@ -54,6 +54,7 @@
   - Proof De Morgan's laws using Venn Diagram and membership table
 
 - (optional) 
+  - Russell's paradox
   - Generalized Unions and Intersections
   - Computer representation of sets
 
