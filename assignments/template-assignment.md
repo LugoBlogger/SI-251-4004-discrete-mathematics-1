@@ -54,7 +54,7 @@ $\Rightarrow$ $A$ adalah pemuka agama
   $\Rightarrow$ $\boxed{(p \wedge \neg q) \vee (\neg p \wedge q) \text{ benar}}$
 
 Di lain sisi, karena kita memiliki $p$ benar ($\textbf{T}$) dan 
-$q$ benar ($\textbf{F}$) (lihat proposisi yang diberi kotak), 
+$q$ benar ($\textbf{T}$) (lihat proposisi yang diberi kotak), 
 dapat dihitung bahwa 
 
 $$

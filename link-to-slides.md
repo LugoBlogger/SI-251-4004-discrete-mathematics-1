@@ -4,18 +4,17 @@ your ITK student e-mail account.
 Please click the following hyperlink to access the slide. 
 
 * [Week 01 - Introduction](https://drive.google.com/file/d/1Fd5s9u7lFIwzsN5sIB29xa1Aq-USzSVy/view?usp=drive_link) 
+* [Week 02 - Logic (Part 1)](https://drive.google.com/file/d/1HPHG8nV4hn2txUNicBnAxfbvHyNrgIjB/view?usp=sharing)
+* [Week 03 - Logic (Part 2)]
+* [Week 04 - Sets (Part 1)]
+* [Week 05 - Sets (Part 2)]
+* [Week 06 - Functions]
+* [Week 07 - Matrices]
 
-* [Week 02 - ]
-* [Week 03 - ]
-* [Week 04 - ]
-* [Week 05 - ]
-* [Week 06 - ]
-* [Week 07 - ]
-
-* [Week 09 - ]
-* [Week 10 - ]
-* [Week 11- ]
-* [Week 12 - ]
-* [Week 13 - ]
-* [Week 14 - ]
-* [Week 15 - ]
+* [Week 09 - Number theory (Part 1)]
+* [Week 10 - Number theory (Part 2)]
+* [Week 11 - Cryptography (Part 1)]
+* [Week 12 - Cryptography (Part 2)]
+* [Week 13 - Induction (Part 1)]
+* [Week 14 - Induction (Part 2)]
+* [Week 15 - Recursion]
