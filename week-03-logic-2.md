@@ -140,9 +140,13 @@
  <ul>
   <li> An <i>argument</i> in propositional logic is a sequence of propositions. 
     </li>
-  <li> All but the final proposition in the argument are called _premises_ and 
+  <li> 
+  
+  All but the final proposition in the argument are called _premises_ and 
     the final proposition is called the _conclusion_. </li>
-  <li> An argument is _valid_ whener all its premises are true, the
+  <li> 
+  
+  An argument is _valid_ whener all its premises are true, the
   conclusion must also be true. </li>
 
   <li> 

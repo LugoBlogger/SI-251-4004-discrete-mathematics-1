@@ -16,18 +16,12 @@
   - The motivation for numbers system from natural numbers to complex
   - Representation natural numbers with empty set
     - $0 = \{\}$
-    - $1 = \left\{\{\}\right\}$
-    - $2 = 1 \cup \{1\} 
-         = \bigg\{\big\{\{\}\big\}, 
-                 \Big\{ \big\{\{\} \big\} \Big\} \bigg\}$
-    - $3 = 2 \cup \{2\}
-         = \left\{\bigg\{\big\{\{\}\big\}, 
-                 \Big\{ \big\{\{\} \big\} \Big\} \bigg\},
-            \left\{
-          \bigg\{\big\{\{\}\big\}, 
-                 \Big\{ \big\{\{\} \big\} \Big\} \bigg\} 
-            \right\}
-           \right\}$
+    - $1 = \{0\} = \left\{\{\}\right\}$
+    - $2 = \left\{0, 1\right\}
+         =  \Big\{ \{\}, \big\{\{\} \big\} \Big\}$
+    - $3 = \{0, 1, 2\}
+         = \bigg\{ \{ \}, \big\{\{\}\big\}, 
+            \Big\{ \{\}, \big\{\{\} \big\} \Big\} \bigg\}$
   - The power set of an empty set.    
     Using the theorem about subset of an empty set and the set itself.
     An empty set is a subset of any set, $\{\} \subseteq \{\}$.  
