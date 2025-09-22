@@ -4,6 +4,10 @@
 
 ## Cryptographic Protocols
 
+- Key Exchange
+
+- Digital Signatures
+
 ## Advanced Encryption Standard (AES)
 
 ## (optional) Homomorphic Encryption
