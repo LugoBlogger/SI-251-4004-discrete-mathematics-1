@@ -130,20 +130,89 @@ Find a formula for $\mathbf{A}^n$, whenever $n$ is a positive integer.
 
 ## Problem 7
 
+Let 
+$$
+  \mathbf{A} = \begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix} 
+  \quad \text{and} \quad
+  \mathbf{B} = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}
+$$
+Find
+<ol type="a">
+<li>
+
+$\mathbf{A} \vee \mathbf{B}$
+<li>
+
+$\mathbf{A} \wedge \mathbf{B}$
+<li>
+
+$\mathbf{A} \odot \mathbf{B}$
+</ol>
+
 **Solution**:
 
 
 ## Problem 8
+
+Let 
+$$
+  \mathbf{A} = \begin{pmatrix} 
+      1 & 0 & 1 \\ 1 & 1 & 0 \\ 0 & 0 & 1
+    \end{pmatrix} \quad \text{and} \quad
+  \mathbf{B} = \begin{pmatrix}
+      0 & 1 & 1 \\ 1 & 0 & 1 \\ 1 & 0 & 1
+    \end{pmatrix}
+$$
+Find
+<ol type="a">
+<li>
+
+$\mathbf{A} \vee \mathbf{B}$
+<li>
+
+$\mathbf{A} \wedge \mathbf{B}$
+<li>
+
+$\mathbf{A} \odot \mathbf{B}$
+</ol>
+
 
 **Solution**:
 
 
 ## Problem 9
 
+Find the Boolean product of $\mathbf{A}$ and $\mathbf{B}$, where
+$$
+  \mathbf{A} = \begin{pmatrix}
+      1 & 0 & 0 & 1 \\ 0 & 1 & 0 & 1 \\ 1 & 1 & 1 & 1 
+    \end{pmatrix} \quad \text{and} \quad
+  \mathbf{B} = \begin{pmatrix}
+      1 & 0 \\ 0 & 1 \\ 1 & 1 \\ 1 & 0
+    \end{pmatrix}
+$$
+
 **Solution**:
 
 
 ## Problem 10
+
+Let 
+$$
+\mathbf{A} = \begin{pmatrix} 1 & 0 & 0 \\ 1 & 0 & 1 \\ 0 & 1 & 0 \end{pmatrix}
+$$
+Find 
+<ol type="a">
+<li>
+
+$\mathbf{A}^{[2]}$
+<li>
+
+$\mathbf{A}^{[3]}$
+<li>
+
+$\mathbf{A} \vee \mathbf{A}^{[2]} \vee \mathbf{A}^{[3]}$
+</ol>
 
 **Solution**:  
 
