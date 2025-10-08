@@ -186,8 +186,6 @@ If $2 + 2 = 4$, then $1 + 2 = 3$.
 
 ## Problem 05
 
-**Solution**:
-
 For each of these sentences, determine whether an inclusive or, or an inclusive
 or, is intended. Explain your answer.
 
