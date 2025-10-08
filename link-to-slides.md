@@ -7,7 +7,7 @@ Please click the following hyperlink to access the slide.
 * [Week 02 - Logic (Part 1)](https://drive.google.com/file/d/1HPHG8nV4hn2txUNicBnAxfbvHyNrgIjB/view?usp=sharing)
 * [Week 03 - Logic (Part 2)]
 * [Week 04 - Sets (Part 1)](https://drive.google.com/file/d/1Wds36-YnSesEyxlMjVhb2yW0W5PoKDtl/view?usp=drive_link)
-* [Week 05 - Sets (Part 2)]
+* [Week 05 - Sets (Part 2)](https://drive.google.com/file/d/1fM8AMhWGTFMhETUtx8S1_mYHmEUDY6gd/view?usp=drive_link)
 * [Week 06 - Functions]
 * [Week 07 - Matrices]
 
