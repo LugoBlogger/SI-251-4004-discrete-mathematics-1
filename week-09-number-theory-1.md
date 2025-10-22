@@ -5,7 +5,7 @@
 
 ## Divisibility and Modular Arithmetic
 
-- Definision of divisibility
+- Definition of divisibility
 
 - Theorem 1 (some of the basic properties of divisibility of integers)
 - Corollary 1
@@ -66,4 +66,8 @@ positive integer that is divisible by both $a$ and $b$. The least common
 multiple of $a$ and $b$ is denoted by $\operatorname{lcm}(a, b)$
 
 
-- (optional) gdcs as Linear Combinations
+- (optional) gcds as Linear Combinations
+  - Bézout's theorem
+  - Bézout's identity
+    1. First method to find it using two passes of Euclidean algorithm
+    2. Second method to find it using extended Euclidean algorithm
