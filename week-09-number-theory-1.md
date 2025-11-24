@@ -23,7 +23,7 @@
 
 - Arithmetic modulo $m$
 
-## (optional) Integer Representations and Algorithms
+## Integer Representations and Algorithms
 
 - Binary expansions
 - Octal and hexadecimal expansions
