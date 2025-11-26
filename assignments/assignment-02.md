@@ -48,7 +48,7 @@ Diberikan 7 buah himpunan sebagai berikut,
 - $B = \{1, 1, 0, 1, 1, 1, 0\}$
 - $C = \{1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1\}$
 - $D = \{1, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0\}$
-- $E = \{0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1\}h$
+- $E = \{0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1\}$
 - $F = \{0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0\}$
 - $G = \{1, 1, 0, 0, 1, 1, 1\}$
 
@@ -139,7 +139,7 @@ $A \odot B$
 
 ## Problem 5 (50 poin)
 
-Suatu matriks persegi $A$ berukuran $n\times n$ apabila dikalian dengan suatu matriks persegi $B$ berukuran $n \times n$
+Suatu matriks persegi $A$ berukuran $n\times n$ apabila dikalikan dengan suatu matriks persegi $B$ berukuran $n \times n$
 menghasilkan matriks identitas $\mathbb{I}_{n\times n}$, 
 maka matriks $B$ disebut invers dari matriks $A$, 
 atau dapat ditulis $B = A^{-1}$. 

@@ -22,17 +22,79 @@
   - Corollary 2 -> Example 7
 
 - Arithmetic modulo $m$
+  - Closure
+  - Commutativity
+  - Associativity
+  - Identity elements
+  - Additive inverses
+  - Distributivity
 
-## (optional) Integer Representations and Algorithms
+## Integer Representations and Algorithms
 
-- Binary expansions
-- Octal and hexadecimal expansions
-- Base conversion
+- Motivation and history: https://en.wikipedia.org/wiki/Babylonian_cuneiform_numerals
 
-- Table 1 - Hexadecimal, octal, and binary representaiton of the integers 0 
+- A binary number is a number that is an element of $\mathbb{Z}_2 = \{0, 1\}$
+- An octal number is a number that is an element of    
+  $\mathbb{Z}_8 = \{0, 1, 2, 3, 4, 5, 6, 7 \}$
+- A hexadecimal number is a number that is an element of 
+  $\mathbb{Z}_{16} = \{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 
+    \mathrm{A}, \mathrm{B}, \mathrm{C}, \mathrm{D}, \mathrm{E}, \mathrm{F}\}$
+
+- Theorem 1
+
+- Conversion from decimal to binary, octal, and hexadecimal 
+
+- Base conversion. Use the division algorithm ($a = dq + r$)    
+  Example (from decimal to octal)    
+  $$
+  \begin{align*}
+    23\,157 &= 8 \cdot q_0 + r_0 \\
+     &= 8 \cdot 2\,894 + 5 \\
+     &= 8 \cdot (8 \cdot q_1 + r_1) + 5 \\
+     &= 8 \cdot (8 \cdot 361 + 6) + 5 \\
+     &= 8 \cdot (8 \cdot (8 \cdot q_2 + r_2) + 6) + 5 \\
+     &= 8 \cdot (8 \cdot (8 \cdot 45 + 1) + 6) + 5 \\
+     &= 8 \cdot (8 \cdot (8 \cdot (8 \cdot q_3 + r_3) + 1) + 6) + 5 \\
+     &= 8 \cdot (8 \cdot (8 \cdot (8 \cdot 5 + 5) + 1) + 6) + 5 \\ 
+     &= 5\cdot 8^4 + 5 \cdot 8^3 + 1 \cdot 8^2 + 6 \cdot 8^1 + 5 \cdot 8^0 \\
+     &= 55165_8
+  \end{align*} 
+  $$
+
+
+- Table 1 - Hexadecimal, octal, and binary representation of the integers 0 
   through 15.
 
-- Conversion between binary, octal, and hexadecimal expansions
+- Example (first the decimal number is converted to binary and then convert 
+  to octal or hexadecimal)
+
+  $$
+  \begin{align*}
+    &251105 = 2 \cdot 125552 + 1, \\
+    &125552 = 2 \cdot 62776 + 0, \\
+    &62776 = 2 \cdot 31388 + 0, \\
+    &31388 = 2 \cdot 15694 + 0, \\
+    &15694 = 2 \cdot 7847 + 0, \\
+    &7847 = 2 \cdot 3923 + 1, \\
+    &3923 = 2 \cdot 1961 + 1, \\
+    &1961 = 2 \cdot 980 + 1, \\
+    &980 = 2 \cdot 490 + 0, \\
+    &490 = 2 \cdot 245 + 0, \\
+    &245 = 2 \cdot 122 + 1, \\
+    &122 = 2 \cdot 61 + 0, \\
+    &61 = 2 \cdot 30 + 1, \\
+    &30 = 2 \cdot 15 + 0, \\
+    &15 = 2 \cdot 7 + 1, \\
+    &7 = 2 \cdot 3 + 1, \\
+    &3 = 2 \cdot 1 + 1 
+  \end{align*}
+  $$
+
+  So we have $251105 = 11\,1101\,0100\,1110\,0001_2 = $.
+  By grouping into 4 digits, we can translate into hexadecimal easily   
+  $0011\,1101\,0100\,1110\,0001_2 
+    = 3\mathrm{D}4\mathrm{E}1_{16}$
+
 
 - Algorithms for integer operations
   - Addition algorithm
@@ -52,7 +114,7 @@
 
 **Definition 2**     
 Let $a$ and $b$ be integers, not both zero. The largest integer $d$ such
-that $d \mid a$ and $d | b$ is called the _greatest common divisor_ of $a$
+that $d \mid a$ and $d \mid b$ is called the _greatest common divisor_ of $a$
 and $b$. The greatest common divisor of $a$ and $b$ is denoted by 
 $\gcd(a, b)$.
 
