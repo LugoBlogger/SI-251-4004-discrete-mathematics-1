@@ -100,15 +100,40 @@
   - Addition algorithm
   - Multiplcation algorithm
   - Algorithm for `div` and `mod`
-- Modular exponentiation -> Fast Modulear Exponentiation
+- Modular exponentiation -> Fast Modulear Exponentiation   
+  Python demo
 
 ## Primes and Greatest Common Divisors
 
-- Definition of primes
+**Definition 1**    
+An integer $p$ greater than $1$ is called _prime_ if the only positive factors
+of $p$ are $1$ and $p$. A positive integer that is greater than $1$ and is 
+not prime is called _composite_.
 
-- The Fundamental theorem of Arithmetic
+**Theorem 1** The Fundamental theorem of arithmetic
 
-- Trial division - Theorem 2
+**Example 2**
+
+Trial division     
+**Theorem 2**    
+
+- **Example 3**
+- **Example 4**
+
+The Sieve of Eratosthenes.   
+Make the last subtable in Table 1   
+Python demo
+
+State in the calss that there are infinitely many primes according to Theorem 3.
+
+Discuss about Mersenne primes (its definition) and the quest for searching
+the largest prime number in the world. See https://www.mersenne.org/
+
+Discuss about Goldbach's conjecture   
+- Goldbach's version    
+  Every odd integer $n$, $n > 5$, is the sum of three primes.
+- Euler's version    
+  Every even integer $n$, $n > 2$, is the sum of two primes
 
 - Greatest Common Divisors and Least Common Multiples
 
@@ -127,6 +152,7 @@ The _least common multiple_ of the positive integers $a$ and $b$ is the smallest
 positive integer that is divisible by both $a$ and $b$. The least common
 multiple of $a$ and $b$ is denoted by $\operatorname{lcm}(a, b)$
 
+- The Euclidean algorithms
 
 - (optional) gcds as Linear Combinations
   - Bézout's theorem
