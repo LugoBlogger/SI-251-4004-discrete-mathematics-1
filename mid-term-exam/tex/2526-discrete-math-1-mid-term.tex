@@ -1,0 +1,241 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage[nomarginpar, top=1cm, left=1cm, right=1.2cm, bottom=1cm]{geometry}
+
+\usepackage[scaled]{helvet}
+\usepackage[T1]{fontenc}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{mathpazo}
+\usepackage[bb=pazo]{mathalpha}
+\usepackage{tabularx}
+
+\pagenumbering{gobble}
+
+\newcommand{\ITKheader}[3]{%
+  \begin{center}
+    \begin{tabular}{|m{0.25\textwidth}|>{\centering\arraybackslash}m{0.695\linewidth}| }
+      \hline
+      \includegraphics[width=0.25\textwidth]{./Logo_ITK_hstack.png}
+      & \large\textbf{MID-TERM EXAM} \par
+        ACADEMIC YEAR #1 - #2 SEMESTER \par
+        #3 STUDY PROGRAMME \par 
+        INSTITUT TEKNOLOGI KALIMANTAN \par 
+        \\ \hline
+    \end{tabular}
+  \end{center}
+}
+
+
+\newcommand{\courseDetail}[6]{%
+\begin{center}
+  \bgroup
+  \def\arraystretch{1.5}
+  \begin{tabular}{|ll|ll|}
+    \hline
+    Course Name       &: #1
+      & Duration  &: #4 \\ \hline
+    Number of Credits &: #2             
+      & Date      &: #5 \\ \hline
+    Lecturer          &: #3
+      & Exam type &: #6 \\ \hline
+  \end{tabular}
+  \egroup
+\end{center}
+}
+
+
+\begin{document}
+
+\ITKheader{2025/2026}{ODD}{INFORMATION SYSTEMS}
+
+\courseDetail{Discrete Mathematics 1}%
+  {3 credits}%
+  {Henokh Lugo Hariyanto, M.Sc.}%
+  {120 minutes}%
+  {Wednesday / October 15th, 2025}%
+  {Open an A4 cheat sheet}
+
+\textbf{SOAL PAKET A}
+
+\begin{enumerate}
+  \item Diberikan tiga buah himpunan $A$, $B$, dan $C$. Gambarkan diagram Venn
+  \begin{enumerate}
+    \item $A \setminus (B \cup C)$;
+
+    \item $\overline{A} \cap (B \cup C)$;
+    
+    \item $\overline{A} \cap (C \setminus B)$;
+  \end{enumerate}
+
+  \item Misalkan $p$, $q$, dan $r$ masing-masing merupakan proposisi
+    sebagai berikut
+
+    $p$: Kamu mendapatkan nilai A pada ujian akhir di kelas matematika diskrit \\
+    $q$: Kamu mengerjakan semua latihan di buku matematika diskrit \\
+    $r$: Kamu mendapatkan nilai A di kelas matematika diskrit
+
+    Tuliskan proposisi berikut menggunakan $p$, $q$, dan $r$ dan operator
+    logika (termasuk negasi)
+    \begin{enumerate}
+      \item Kamu mendapatkan nilai A pada ujian akhir di kelas matematika diskrit, 
+        tetapi kamu tidak mengerjakan semua latihan di buku matematika diskrit.  
+      \item Kamu mendapatkan nilai A pada ujian akhir di kelas matematika diskrit, 
+        kamu mengerjakan semua latihan di buku matematika diskrit, dan 
+        kamu mendapatkan nilai A di kelas matematika diskrit.
+      \item Untuk mendapatkan nilai A di kelas matematika diskrit, kamu perlu
+        mendapatkan nilai A pada ujian ujian akhir di kelas matematika diskrit.
+      \item Kamu mendapatkan nilai A pada ujian akhir di kelas matematika diskrit, 
+        namun kamu tidak mengerjakan semua latihan di buku matematika diskrit;
+        akan tetapi, kamu mendapatkan nilai A di kelas matematika diskrit
+      \item Mendapatkan nilai A pada ujian akhir di kelas matematika diskrit, 
+        dan mengerjakan semua latihan di buku matematika diskrit adalah
+        syarat cukup untuk mendapatkan nilai A di kelas matematika diskrit 
+      \item Kamu mendapatkan nilai A di kelas matematika diskirt jika dan 
+        hanya jika kamu mengerjakan semua latihan di buku matematika 
+        diskrit atau kamu mendapatkan nilai A di ujian akhir di kelas 
+        matematika diskrit.
+    \end{enumerate}
+
+  \vfill
+  \newpage
+
+  \item Melalui definisi jarak Jaccard kita dapat menghitung "jarak"
+    antara dua buah himpunan. Definisi jarak Jaccard $d_J(A, B)$
+    antara dua himpunan $A$ dan $B$ diberikan oleh:   
+    $$ d_J(A, B) = 1 - J(A, B)$$   
+    dengan $J(A, B)$ adalah kesamaan Jaccard yang didefinisikan sebagai 
+    $$ J(A, B) = |A \cap B| / |A \cup B|$$
+    Melalui definisi diatas, tentukan $d_j(A, B)$ dan $J(A, B)$ dari 
+    dua himpunan berikut
+    \begin{enumerate}
+      \item $A = \{1, 3, 5\}$, $B = \{2, 4, 6\}$
+      \item $A = \{1, 2, 3, 4\}$, $B = \{3, 4, 5, 6\}$
+    \end{enumerate}
+
+  \item Pertimbangkan suatu fungsi-fungsi yang merupakan fungsi-fungsi dari 
+    himpunan semua \textit{youtuber} di Indonesia dan dipetakan ke himpunan-himpunan 
+    di (a) sampai (d)
+    \begin{enumerate}
+      \item kode unik untuk kanal \textit{youtuber}
+      \item pendapatan per bulan \textit{youtuber} dibulatkan ke jutaan.
+      \item nama kanal \textit{youtuber}
+      \item \textit{total views} seluruh video yang dimiliki oleh \textit{youtuber}
+        dibulatkan ke ribuan.
+    \end{enumerate}
+    Dalam kondisi seperti apakah fungsi-fungsi tersebut dapat menjadi fungsi
+    satu-satu (fungsi injektif)? Perhatikan bahwa sebenarnya ada empat 
+    fungsi di dalam soal ini dan jabarkanlah setiap fungsi tersebut kapan dia 
+    menjadi fungsi injektif.
+\end{enumerate}
+
+\vfill
+
+\begin{center}
+  \textbf{Selamat mengerjakan}
+
+  \vspace{12pt}
+  
+  \textit{"Future success isn't solely determined by academic grades but 
+    by the lasting knowledge and understanding one retains beyond 
+    formal education"}
+\end{center}
+
+\newpage
+
+\ITKheader{2025/2026}{ODD}{INFORMATION SYSTEMS}
+
+\courseDetail{Discrete Mathematics 1}%
+  {3 credits}%
+  {Henokh Lugo Hariyanto, M.Sc.}%
+  {120 minutes}%
+  {Wednesday / October 15th, 2025}%
+  {Open an A4 cheat sheet}
+
+\textbf{SOAL PAKET B}
+
+\begin{enumerate}
+  \item Diberikan tiga buah himpunan $P$, $Q$, dan $R$. 
+    Gambarkan diagram Venn
+  \begin{enumerate}
+    \item $P \cap (Q \cup R)$;
+
+    \item $\overline{P} \cap (Q \cup R)$;
+    
+    \item $P \cup (Q \setminus R)$;
+  \end{enumerate}
+
+  \item Misalkan $a$, $b$, dan $c$ masing-masing merupakan proposisi
+    sebagai berikut
+  
+    $a$: Seekor beruang telah terlihat di daerah ini. \\ 
+    $b$: Pendakian di jalur ini aman. \\
+    $c$: Ada buah mangga yang matang di sepanjang jalur pendakian.
+
+    Tuliskan proposisi berikut menggunakan $a$, $b$, dan $c$ dan 
+    operator logika (termasuk negasi)
+    \begin{enumerate}
+      \item Ada buah mangga yang matang sepanjang jalur pendakian, namun 
+        seekor beruang tidak nampak di daerah ini.
+      \item Seekor beruang tidak nampak di daerah ini dan pendakian 
+        di jalur ini aman, namun ada buah mangga yang matang di sepanjang 
+        jalur pendakian.
+      \item Jika ada buah manga yang matang di sepanjang jalur pendakian, 
+        pendakian di jalur ini aman jika dan hanya jika seekor beruang 
+        tidak nampak di daerah ini.
+      \item Tidaklah aman melakukan pendakian di jalur ini, namun 
+        seekor beruang tidak nampak di daerah ini dan ada buah mangga 
+        yang matang di sepanjang jalur pendakian.  
+      \item Agar pendakian di jalur ini aman, adalah perlu namun 
+        tidak cukup bahwa sebuah mangga tidak matang di sepanjang 
+        jalur pendakian, dan seekor beruang tidak terlihat di daerah ini. 
+      \item Pendakian tidak aman di jalur ini apabila seekor beruang 
+        telah terlihat di daerah ini dan ada buah mangga yang matang 
+        di sepanjang jalur pendakian.
+    \end{enumerate}
+
+  \vfill
+  \newpage
+
+  \item Melalui definisi jarak Jaccard kita dapat menghitung "jarak"
+    antara dua buah himpunan. Definisi jarak Jaccard $d_J(P, Q)$
+    antara dua himpunan $P$ dan $Q$ diberikan oleh:   
+    $$ d_J(P, Q) = 1 - J(P, Q)$$   
+    dengan $J(P, Q)$ adalah kesamaan Jaccard yang didefinisikan sebagai 
+    $$ J(P, Q) = |P \cap Q| / |P \cup Q|$$
+    Melalui definisi diatas, tentukan $d_j(P, Q)$ dan $J(P, Q)$ dari 
+    dua himpunan berikut
+    \begin{enumerate}
+      \item $P = \{1, 2, 3, 4, 5, 6\}$, $Q = \{1, 2, 3, 4, 5, 6\}$
+      \item $P = \{1\}$, $Q = \{1, 2, 3, 4, 5, 6\}$
+    \end{enumerate}
+
+  \item Pertimbangkan suatu fungsi-fungsi yang merupakan fungsi-fungsi 
+    dari himpunan mahasiswa di suatu kelas matematika diskrit dan dipetakan 
+    ke himpunan-himpunan di (a) sampai (d)
+    \begin{enumerate}
+      \item nama kota tempat mahasiswa berasal 
+      \item nilai akhir yang didapatkan mahasiswa: A, AB, B, BC, C, dan D.
+      \item nama depan mahasiswa
+      \item merk kendaraan bermotor yang dibawa oleh mahasiswa.
+    \end{enumerate}
+    Dalam kondisi seperti apakah fungsi-fungsi tersebut dapat menjadi fungsi
+    satu-satu (fungsi injektif)? Perhatikan bahwa sebenarnya ada empat 
+    fungsi di dalam soal ini dan jabarkanlah setiap fungsi tersebut kapan dia 
+    menjadi fungsi injektif.
+\end{enumerate}
+
+\vfill
+
+\begin{center}
+  \textbf{Selamat mengerjakan}
+
+  \vspace{12pt}
+  
+  \textit{"Future success isn't solely determined by academic grades but 
+    by the lasting knowledge and understanding one retains beyond 
+    formal education"}
+\end{center}
+
+\end{document}

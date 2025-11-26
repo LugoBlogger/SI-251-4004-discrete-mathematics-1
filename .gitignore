@@ -1,2 +1,7 @@
 /assignments/*.pdf
 /program/words_dictionary.json
+/mid-term-exam/tex/*.aux
+/mid-term-exam/tex/*.fdb_latexmk
+/mid-term-exam/tex/*.fls
+/mid-term-exam/tex/*.log
+/mid-term-exam/tex/*.synctex.gz
