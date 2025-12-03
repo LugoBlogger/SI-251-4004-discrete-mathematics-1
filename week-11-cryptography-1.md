@@ -2,6 +2,10 @@
 
 ## Introduction 
 
+Cryptography = crypto + graphy    
+crypto from Ancient Greek κρυπτός (_kruptós_, “hidden, secret”).    
+graphy from Ancient Gree γραφή (_graphḗ_, “writing, drawing, description”)
+
 The subject of transforming information so that it cannot be easily recovered 
 without special knowledge. 
 
@@ -143,7 +147,7 @@ without special knowledge.
 1. Set a particular key $(n, e)$
 2. Prepare the plaintext $M$, and translate it using shift cipher 
    with two digits output 
-   ($(A, B, C, \ldots) \rightarrow (00, 01, 02, \ldots, 25)$). 
+   ($(A, B, C, \ldots, Z) \rightarrow (00, 01, 02, \ldots, 25)$). 
    Then we concatenate these two-digit numbers
    into strings of digits.
 3. We divide the string into equally sized blocks of $2N$ digit and 
@@ -162,6 +166,8 @@ without special knowledge.
 ## RSA Decryption
 1. Prepare the key $(n, e)$ and a block message $c$ that 
    we want to decrypt.
+   Even we have known this pair $(n, e)$, we have to know also
+   $n = p q$. This product of two primes are kept secret.
 2. Collect the information of the decryption key $d$,
    an inverse of $e$ modulo $(p-1)(q-1)$.
    $$
