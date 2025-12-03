@@ -105,20 +105,61 @@ $9999$ dan $11111$
 </ol>
 
 ## Problem 5 (50 poin)
+Di dalam kriptosistem RSA diatur cara untuk mengubah 
+pesan normal (_plaintext_) ke pesan acak (_chiphertext_), disebut
+_encryption_, dan juga proses sebaliknya disebut _decryption_.
 
-Misalkan Arisa dan Bobi memiliki _public keys_ dan _private keys_ sebagai 
-berikut:
-$$
-\begin{cases}
-  (n_\textrm{Arisa}, e_\textrm{Arisa}) = (2867, 7), \quad
-    d_\textrm{Arisa} = 1183, \\
-  (n_\textrm{Bobi}, e_\textrm{Bobi}) = (3127, 21), \quad 
-    d_\textrm{Bobi} = 1149
-\end{cases}
-$$
+_Encryption_ dalam kriptosistem RSA mengikuti tahapan berikut
+1. Diberikan dua pasangan bilangan bulat positif $n$ dan $e$.
+2. Pastikan bahwa kita diberikan faktor prima dari $n$ 
+   sedemikian rupa sehingga $n = p q$.
+3. Pastikan juga $\gcd(e, (p-1)(q-1)) = 1$
+4. Ubah setiap huruf di pesan _plaintext_ ke digit desimal 
+   mengikuti konversi berikut:
+   ($(A, B, C, \ldots, Z) \rightarrow (00, 01, 02, \ldots, 25)$).  
+   Sebagai contoh, jika kita mempunyai kata "STOP", maka akan diubah menjadi
+   $18\,19\,14\,15$
+5. Kelompokan digit-digit desimal yang diperoleh untuk setiap $2N$ digit, 
+   dengan $2N$ merupakan bilangan bulat terbesar yang masih 
+   memenuhi $2N \leq n$.   
+   Sebagai contoh, hasil konversi dari kata "STOP" memiliki digit 
+   $18 \, 19\,14\,15$, dan kita memiliki $n = 2537$.   
+   Jika kita menggunakan $2N = 2$, maka digit terbesar yang bisa dibentuk
+   adalah $25$ (angka $25$ ini berasal dari huruf terakhir $Z$ yang
+   memiliki desimal $25$), tentunya $25 < n = 2537$.   
+   Jika kita menggunakan $2N = 4$, maka digit terbesar yang bisa dibentuk
+   adalah $2525$ (angak $2525$ ini berasal dari perulangan dua kali 
+   huruf terakhir $Z$ yang memiliki desimal $25$), 
+   tentunya $2525 < n = 2537$.   
+   Jika kita memggunakan $2N = 6$, maka digit terbesar yang bisa dibentuk
+   adalah $252525$, tentukan nilai ini jauh lebih besar dari $n = 2537$.   
+   Sehingga kita memerlukan pengelompokan $2N = 4$ digit. Diperoleh
+   "STOP" $= 1819\,1415$
 
-Arisa ingin mengirim pesan berikut ke Bobi: "BELI SEKARANG".
-Bobi dapat memverifikasi pesan tersebut datang dari Arisa dan hanya Bobi
-yang mampu membaca pesan tersebut. Pesan seperti apakah yang harus dikirim
-ke Bobi, dengan mengasumsikan bahwa Arisa menandatangani pesannya
-dan lalu mengenkripsikannya menggunakan _public key_ milik Bobi?
+6. Untuk setiap kelompok angka yang diperoleh dari tahap 5), lakukan perhitungan
+   untuk _chipertext_, $c$ berikut
+   $$
+      c = m^e \bmod n
+   $$
+   dengan $m$ adalah setiap angka yang terbentuk dari pengelompokan 
+   di tahap 5).
+   Di tahap ini dapat digunakan algoritma _fast modular exponentiation_
+   untuk mempercepat perhitungan.    
+   Sebagai contoh, untuk setiap kelompok yang terbentuk dari "STOP" 
+   menggunakan $n=2537$, kita dapatkan 
+   $m_1 = 1819$ dan $m_11414$. Lalu jika $e = 13$ kita dapat 
+   menghitung $c_1 = m_1^{13} \bmod 2537$ dan $c_2 = m_2^{13} \bmod 2537$
+
+
+
+7. Satukan setiap _chipertext_ yang diperoleh dari masing-masing
+   kelompok untuk mendapatkan pesan keseluruahn yang terenkripsi.   
+   Sebagai contoh dari contoh di tahap 6), kita dapatkan
+   $c = c_1 c_2$ (kita tinggal menggabungkan dua _chipertext_ yang
+   dihasilkan).
+
+
+Misalkan Arisa ingin mengirim pesan berikut ke Yasuke: "BELI SEKARANG"
+dengan $n = 2357$ dan $e = 13$, seperti apakah hasil _ciphertext_ yang
+harus dikirim ke Yasuke, jika $n = 2357$ dapat difaktorkan ke dalam
+perkalian dua bilangan prima $p$ dan $q$ sebagai $2357 = 43 \cdot 59$?
