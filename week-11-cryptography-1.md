@@ -142,10 +142,12 @@ without special knowledge.
 
 1. Set a particular key $(n, e)$
 2. Prepare the plaintext $M$, and translate it using shift cipher 
-   with two digits output. Then we concatenate these two-digit numbers
+   with two digits output 
+   ($(A, B, C, \ldots) \rightarrow (00, 01, 02, \ldots, 25)$). 
+   Then we concatenate these two-digit numbers
    into strings of digits.
 3. We divide the string into equally sized blocks of $2N$ digit and 
-   we choose $N$ such that $2N \leq n$. (We can also padd
+   we choose $N$ such that $2N \leq n$. (We can also pad
    the string such that we have for the padded string, $2N = n$)
 4. After that, we have a sequence of integers $m_1, m_2, \ldots, m_k$
    for some integers $k$, where $k$ is the number of the blocks.
@@ -158,8 +160,30 @@ without special knowledge.
 **Example 8** (a short example of RSA encryption)
 
 ## RSA Decryption
-1. Collect the information of the decryption key $d$,
+1. Prepare the key $(n, e)$ and a block message $c$ that 
+   we want to decrypt.
+2. Collect the information of the decryption key $d$,
    an inverse of $e$ modulo $(p-1)(q-1)$.
+   $$
+      d e = 1 \pmod{(p-1)(q-1)}
+   $$
+   To calculate $d$, use the extended Euclidean algorithm 
+   to find first the Bézout's identity
+   $$
+    \gcd(e, (p-1)(q-1)) = se + t(p-1)(q-1)
+   $$
+   Then, we have $d = s$. See the complete description 
+   for the calculation this inverse 
+   in [`week-09-number-theory.md`](./week-09-number-theory-1.md)
+
+3. To decrypt a block $c$, we can compute
+   $$
+     m = c^d \bmod n
+   $$
+   Use fast modular exponentation to compute this modulo.
+
+4. Decrypt each block message $m$ using shift chiper to get 
+   the original message.
    
 
 
