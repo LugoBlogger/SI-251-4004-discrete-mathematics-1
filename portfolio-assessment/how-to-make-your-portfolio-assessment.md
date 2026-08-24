@@ -63,7 +63,7 @@ To write your portfolio assessment, you need to follow strictly to all these rul
    For the problems, you can choose the problems from (Rosen, 2019)
    or use from the recitations.
 
-   At the end of the semester, you will accumulate at least 28 sheets.
+   At the end of the semester, you will accumulate at least 26 sheets.
    Anyone who cannot meet this requirement are not be able to join
    the midterm and final exam.
 
