@@ -3,9 +3,9 @@ your ITK student e-mail account.
 
 Please click the following hyperlink to access the slide. 
 
-* [Week 01 - Introduction](TBA) 
-* [Week 02 - Logic (Part 1)](TBA)
-* [Week 03 - Logic (Part 2)](TBA)
+* [Week 01 - Introduction](https://drive.google.com/file/d/1R9FM-Gt-JO6L_UHx3fUR3HqSqIfvjzvj/view?usp=drive_link) 
+* [Week 02 - Logic (Part 1)](https://drive.google.com/file/d/12d_9FWmap92g1QA_8w1_UXIPYyeBosiD/view?usp=drive_link)
+* [Week 03 - Logic (Part 2)](https://drive.google.com/file/d/10lZJzd5Auj6CglWAYR__zbZ3o-zOk5jV/view?usp=drive_link)
 * [Week 04 - Sets (Part 1)](TBA)
 * [Week 05 - Sets (Part 2)](TBA)
 * [Week 06 - Functions]

@@ -65,7 +65,7 @@
     To determine whether $\forall x P(x)$ is true, we can loop through all
     $n$ values of $x$ to see whether $P(x)$ is always true. If we encounter
     a value $x$ for which $P(x)$ is false, then we have shown that 
-    $\forall x P(x)$ if false. Otherwise, $\forall x P(x)$ is true. 
+    $\forall x P(x)$ is false. Otherwise, $\forall x P(x)$ is true. 
     To see whether $\exist x P(x)$ is true, we loop through the $n$ values
     of $x$ searching for a value for which $P(x)$ is true. If we find one, 
     then $\exist x P(x)$ is true. If we never find such an $x$, then
