@@ -5,3 +5,5 @@
 /mid-term-exam/tex/*.fls
 /mid-term-exam/tex/*.log
 /mid-term-exam/tex/*.synctex.gz
+/program/*.mseed
+/program/*.xml

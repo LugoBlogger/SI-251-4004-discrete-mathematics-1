@@ -16,7 +16,7 @@
 - Problem 3    
   Given a schematic of a computer usage by 15 people:
 
-  <img src="./figures/function-prob-03.drawio.png" width=500>
+  <img src="./figures/function-prob-03.png" width=500>
 
   Example of the usage scenario:
   - `user0` takes 3 A.M. - 4 A.M.
