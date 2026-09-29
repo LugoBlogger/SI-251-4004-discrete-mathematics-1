@@ -9,7 +9,7 @@ Please click the following hyperlink to access the slide.
 * [Week 04 - Sets (Part 1)](https://drive.google.com/file/d/1DjTBObRHco-hOBxcl8wcJc9WWG6O9SZE/view?usp=drive_link)
 * [Week 05 - Sets (Part 2)](https://drive.google.com/file/d/1zxq7t3dcoO5isglw_ehNqtAW88cBtorv/view?usp=drive_link)
 * [Week 06 - Functions](TBA)
-* [Week 07 - Matrices](TBA)
+* [Week 07 - Matrices](https://drive.google.com/file/d/1xzVumrIIRM4OrO1LcmpWwFO3OIvPtlJK/view?usp=drive_link)
 
 * [Week 09 - Number theory (Part 1)]
 * [Week 10 - Number theory (Part 2)]

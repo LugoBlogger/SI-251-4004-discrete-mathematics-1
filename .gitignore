@@ -1,4 +1,5 @@
 /assignments/*.pdf
+/figures/*.bkp
 /program/words_dictionary.json
 /mid-term-exam/tex/*.aux
 /mid-term-exam/tex/*.fdb_latexmk
