@@ -2,26 +2,47 @@
 
 ## Motivation
 
+Can you define what is a division procedure?
 
 ## Divisibility and Modular Arithmetic
 
-- Definition of divisibility
+- Definition of divisibility (Definition 1). Example 1
 
 - Theorem 1 (some of the basic properties of divisibility of integers)
 - Corollary 1
 
 - The division algorithm (Theorem 2)
 
-- Divisor, dividend, quotient and remainder
+- Divisor, dividend, quotient and remainder (Definition 2)
 
 - Modular arithmetic
-  - congruence, modulus (plural moduli)
+  - congruence, modulus (plural moduli) (Definition 3)
   - Theorem 3 -> Example 5
   - Theorem 4
   - Theorem 5 -> Example 6
   - Corollary 2 -> Example 7
 
-- Arithmetic modulo $m$
+- Arithmetic modulo $m$    
+  We can define arithmetic operations on $\mathbb{Z}_m$, the set of non-negative
+  integers less than $m$, that is, the set $\{0, 1, \ldots, m-1\}$.
+  In particular, we define addition of these integers, denoted
+  by $+_m$ by
+  $$
+    a +_m b = (a + b) \operatorname{mod} m,
+  $$
+  where the addition on the right-hand side of this equation is the ordinary
+  addition of integers, and we define multiplication of these integers,
+  denoted by $\cdot_m$ by
+  $$
+    a \cdot_m b = (a \cdot b) \operatorname{mod} m,
+  $$
+  where multiplication on the right-hand side of this equation is the 
+  ordinary multiplication of integers.   
+  The operations $+_m$ and $\cdot_m$ are called addition and multiplication 
+  modulo $m$ and when we use these operations, we are said to be doing 
+  **arithmetic modulo** $m$.
+  
+  Some properties that arithmetic modulo $m$ satisfies are
   - Closure
   - Commutativity
   - Associativity
@@ -40,7 +61,7 @@
   $\mathbb{Z}_{16} = \{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 
     \mathrm{A}, \mathrm{B}, \mathrm{C}, \mathrm{D}, \mathrm{E}, \mathrm{F}\}$
 
-- Theorem 1
+- Theorem 1 (representing a positive integer $n$ to any different base-number $b$)
 
 - Conversion from decimal to binary, octal, and hexadecimal 
 
@@ -97,10 +118,11 @@
 
 
 - Algorithms for integer operations
-  - Addition algorithm
-  - Multiplcation algorithm
-  - Algorithm for `div` and `mod`
-- Modular exponentiation -> Fast Modulear Exponentiation   
+  - Addition algorithm (Algorithmm 2)
+  - Multiplcation algorithm (Algorithm 3)
+  - Algorithm for `div` and `mod`(Algorithm 4)
+- Modular exponentiation -> Fast Modular Exponentiation (Algorithm 5)   
+  Example 12    
   Python demo
 
 ## Primes and Greatest Common Divisors
